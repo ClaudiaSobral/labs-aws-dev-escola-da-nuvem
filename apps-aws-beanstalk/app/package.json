@@ -1,0 +1,12 @@
+{
+    "name": "minha-app-beanstalk",
+    "version": "1.0.0",
+    "description": "Aplicação simples em Node.js 12 para AWS Elastic Beanstalk",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "engines": {
+      "node": "12.x"
+    }
+  }
