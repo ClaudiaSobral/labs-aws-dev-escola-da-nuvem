@@ -1,5 +1,7 @@
 # Aplicações com AWS Elastic Beanstalk 
 
+![arquitetura](../docs/imgs/arquiteturas/lab_beanstalk_arquitetura.png)
+
 ## Objetivos 
 
 - Criar uma role IAM (Perfil de Instância EC2) com as permissões necessárias para o Elastic Beanstalk. 
@@ -9,7 +11,7 @@
 
 ## Passo a passo
 
-![roles_beanstalk]('docs\imgs\lab_beanstalk\print_role.png')
+![roles](../docs/imgs/lab_beanstalk/print_role.png)
 
 - Criação de uma role com as seguintes políticas anexadas:
     - AWSElasticBeanstalkWebTier: permissão para servidores web interagirem com Elastic Beanstalk
@@ -18,9 +20,9 @@
     - AWSElasticBeanstalkEnhancedHealth - essencial para relatórios de saúde detalhados na plataforma do Elastic Beanstalk
     - AWSElasticBeanstalkManagedUpdatesCustomerRolePolicy - permite manutenção de serviços AWS. Não deve ser anexada a usuários
 
-![ambiente-beanstalk]('docs\imgs\lab_beanstalk\print_ambiente_elasticbeanstalk.png')
+![ambiente](../docs/imgs/lab_beanstalk/print_ambiente_elasticbeanstalk.png)
 
 - Criação de ambiente de desenvolvimento dentro do Elastic Beanstalk
     - Implantação de aplicação por arquivo .zip (opcional)
 
-![aplicacao-criada]('docs\imgs\lab_beanstalk\print_app_ativo')
+![aplicacao](../docs/imgs/lab_beanstalk/print_app_ativo.png)
